@@ -23,7 +23,7 @@ jobs:
     - uses: actions/setup-java@v1
       with:
         java-version: 11
-    - uses: eskatos/gradle-command-action@v1
+    - uses: broadinstitute/gradle-command-action@v1
       with:
         arguments: build
 ```
@@ -47,7 +47,7 @@ See `gradle --help` for more information.
 If you need to pass environment variables, simply use the GitHub Actions workflow syntax:
 
 ```yaml
-- uses: eskatos/gradle-command-action@v1
+- uses: broadinstitute/gradle-command-action@v1
   env:
     CI: true
 ```
@@ -55,7 +55,7 @@ If you need to pass environment variables, simply use the GitHub Actions workflo
 ## Run a build from a different directory
 
 ```yaml
-- uses: eskatos/gradle-command-action@v1
+- uses: broadinstitute/gradle-command-action@v1
   with:
     build-root-directory: some/subdirectory
 ```
@@ -63,7 +63,7 @@ If you need to pass environment variables, simply use the GitHub Actions workflo
 ## Use a Gradle wrapper from a different directory
  
 ```yaml
- - uses: eskatos/gradle-command-action@v1
+ - uses: broadinstitute/gradle-command-action@v1
    with:
      wrapper-directory: path/to/wrapper-directory
  ```
@@ -71,7 +71,7 @@ If you need to pass environment variables, simply use the GitHub Actions workflo
 ## Use a specific `gradle` executable
 
 ```yaml
- - uses: eskatos/gradle-command-action@v1
+ - uses: broadinstitute/gradle-command-action@v1
    with:
      gradle-executable: path/to/gradle
 ```
@@ -79,7 +79,7 @@ If you need to pass environment variables, simply use the GitHub Actions workflo
 ## Setup and use a declared Gradle version
 
 ```yaml
- - uses: eskatos/gradle-command-action@v1
+ - uses: broadinstitute/gradle-command-action@v1
    with:
      gradle-version: 6.5
 ```
@@ -112,7 +112,7 @@ jobs:
     - uses: actions/setup-java@v1
       with:
         java-version: 11
-    - uses: eskatos/gradle-command-action@v1
+    - uses: broadinstitute/gradle-command-action@v1
       with:
         gradle-version: rc
         arguments: build --dry-run # just test build configuration
@@ -206,7 +206,7 @@ jobs:
     - uses: actions/setup-java@v1
       with:
         java-version: 11
-    - uses: eskatos/gradle-command-action@v1
+    - uses: broadinstitute/gradle-command-action@v1
       with:
         arguments: build
       id: gradle

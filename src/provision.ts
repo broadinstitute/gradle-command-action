@@ -9,7 +9,7 @@ import * as toolCache from '@actions/tool-cache'
 
 import * as gradlew from './gradlew'
 
-const httpc = new httpm.HttpClient('eskatos/gradle-command-action')
+const httpc = new httpm.HttpClient('broadinstitute/gradle-command-action')
 const gradleVersionsBaseUrl = 'https://services.gradle.org/versions'
 
 /**
